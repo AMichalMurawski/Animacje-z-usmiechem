@@ -1,0 +1,99 @@
+@use '../scss/forward' as *;
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-primary);
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+}
+
+.main {
+  position: relative;
+  height: 100%;
+  flex: 1;
+  padding: 30px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 3;
+  letter-spacing: 0.06em;
+  text-align: center;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: 0.06em;
+
+  &__link {
+    &:hover,
+    &:focus {
+      color: var(--link-secondary);
+    }
+  }
+
+  &__active {
+    color: var(--link-secondary);
+  }
+}
+
+.header {
+  background-image: var(--bgShadow-primary),
+    url('../images/header-background.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  text-shadow: var(--textShadow-primary);
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+  }
+  &__logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+}
+
+.footer {
+  background: var(--bgShadow-secondary);
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+  }
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  &__item {
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    font-style: normal;
+  }
+
+  &__link {
+    &:hover,
+    &:focus {
+      color: var(--link-primary);
+    }
+  }
+}
