@@ -49,17 +49,19 @@ export const SharedLayout = () => {
         </div>
       </header>
       <main className={css.main}>
-        <Suspense
-          fallback={
-            <FidgetSpinner
-              backgroundColor="mediumaquamarine"
-              ballColors={['plum', 'plum', 'plum']}
-              wrapperClass={css.spinner}
-            />
-          }
-        >
-          <Outlet />
-        </Suspense>
+        <div className={'container'}>
+          <Suspense
+            fallback={
+              <FidgetSpinner
+                backgroundColor="mediumaquamarine"
+                ballColors={['plum', 'plum', 'plum']}
+                wrapperClass={css.spinner}
+              />
+            }
+          >
+            <Outlet />
+          </Suspense>
+        </div>
       </main>
       <footer className={css.footer}>
         <div className={['container', css.footer__container].join(' ')}>
