@@ -1,3 +1,4 @@
+import { OfferDescription } from 'components/OfferDescription/OfferDescription';
 import { OfferList } from 'components/OfferList/OfferList';
 import { Route, Routes } from 'react-router-dom';
 
@@ -6,11 +7,26 @@ const Offer = () => {
     <>
       <OfferList />
       <Routes>
-        <Route path="wesela" element={<div>Tekst o weselach</div>} />
-        <Route path="komunie" element={<div>Tekst o komuniach</div>} />
-        <Route path="chrzciny" element={<div>Tekst o chrzcinach</div>} />
-        <Route path="urodziny" element={<div>Tekst o urodzinach</div>} />
-        <Route path="inne" element={<div>Tekst o innych</div>} />
+        <Route
+          path="wesela"
+          element={<OfferDescription offerType={'wedding'} />}
+        />
+        <Route
+          path="komunie"
+          element={<OfferDescription offerType={'communion'} />}
+        />
+        <Route
+          path="chrzciny"
+          element={<OfferDescription offerType={'christening'} />}
+        />
+        <Route
+          path="urodziny"
+          element={<OfferDescription offerType={'birthday'} />}
+        />
+        <Route
+          path="inne"
+          element={<OfferDescription offerType={'others'} />}
+        />
       </Routes>
     </>
   );

@@ -21,7 +21,7 @@ export const Header = () => {
           <NavLink className={css.nav__link} to="/">
             O nas
           </NavLink>
-          <NavLink className={css.nav__link} to="/oferta">
+          <NavLink className={css.nav__link} to="/oferta/wesela">
             Oferta
           </NavLink>
           <NavLink className={css.nav__link} to="/galeria">

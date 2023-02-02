@@ -1,0 +1,22 @@
+@use 'scss/components/components' as *;
+@use 'scss/utils/utils' as *;
+
+.description {
+  margin-bottom: 30px;
+
+  &__heading {
+    text-align: left;
+  }
+}
+
+.option {
+  list-style: inside circle;
+
+  &__item {
+    @include font-type(400, 16px, 1.2, 0.03em);
+
+    &:not(:first-of-type) {
+      margin-top: 5px;
+    }
+  }
+}
