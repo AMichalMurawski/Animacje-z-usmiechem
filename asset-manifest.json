@@ -1,20 +1,24 @@
 {
   "files": {
-    "main.css": "/animacje-z-usmiechem/static/css/main.4479046f.css",
-    "main.js": "/animacje-z-usmiechem/static/js/main.1fa63489.js",
-    "static/js/175.3882fa5e.chunk.js": "/animacje-z-usmiechem/static/js/175.3882fa5e.chunk.js",
-    "static/js/266.337dce6c.chunk.js": "/animacje-z-usmiechem/static/js/266.337dce6c.chunk.js",
+    "main.css": "/animacje-z-usmiechem/static/css/main.993b6cfa.css",
+    "main.js": "/animacje-z-usmiechem/static/js/main.42329f26.js",
+    "static/css/129.4a6fa9ab.chunk.css": "/animacje-z-usmiechem/static/css/129.4a6fa9ab.chunk.css",
+    "static/js/129.c069b790.chunk.js": "/animacje-z-usmiechem/static/js/129.c069b790.chunk.js",
+    "static/css/266.04fb2ec2.chunk.css": "/animacje-z-usmiechem/static/css/266.04fb2ec2.chunk.css",
+    "static/js/266.b9938bdd.chunk.js": "/animacje-z-usmiechem/static/js/266.b9938bdd.chunk.js",
     "static/js/960.b487292a.chunk.js": "/animacje-z-usmiechem/static/js/960.b487292a.chunk.js",
     "static/media/header-background.jpg": "/animacje-z-usmiechem/static/media/header-background.76a446220cc18d541690.jpg",
     "index.html": "/animacje-z-usmiechem/index.html",
-    "main.4479046f.css.map": "/animacje-z-usmiechem/static/css/main.4479046f.css.map",
-    "main.1fa63489.js.map": "/animacje-z-usmiechem/static/js/main.1fa63489.js.map",
-    "175.3882fa5e.chunk.js.map": "/animacje-z-usmiechem/static/js/175.3882fa5e.chunk.js.map",
-    "266.337dce6c.chunk.js.map": "/animacje-z-usmiechem/static/js/266.337dce6c.chunk.js.map",
+    "main.993b6cfa.css.map": "/animacje-z-usmiechem/static/css/main.993b6cfa.css.map",
+    "main.42329f26.js.map": "/animacje-z-usmiechem/static/js/main.42329f26.js.map",
+    "129.4a6fa9ab.chunk.css.map": "/animacje-z-usmiechem/static/css/129.4a6fa9ab.chunk.css.map",
+    "129.c069b790.chunk.js.map": "/animacje-z-usmiechem/static/js/129.c069b790.chunk.js.map",
+    "266.04fb2ec2.chunk.css.map": "/animacje-z-usmiechem/static/css/266.04fb2ec2.chunk.css.map",
+    "266.b9938bdd.chunk.js.map": "/animacje-z-usmiechem/static/js/266.b9938bdd.chunk.js.map",
     "960.b487292a.chunk.js.map": "/animacje-z-usmiechem/static/js/960.b487292a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4479046f.css",
-    "static/js/main.1fa63489.js"
+    "static/css/main.993b6cfa.css",
+    "static/js/main.42329f26.js"
   ]
 }
