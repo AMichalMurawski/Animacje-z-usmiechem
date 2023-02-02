@@ -1,12 +1,9 @@
-@use './components/logo' as *;
-@use './components/spinner' as *;
+@use './colors' as *;
 
-@use './utils/colors' as *;
-
-@forward './utils/flex' as flex-*;
-@forward './utils/font' as font-*;
-@forward './utils/media' as media-*;
-@forward './utils/transition' as transition-*;
+@forward './flex' as flex-*;
+@forward './font' as font-*;
+@forward './media' as media-*;
+@forward './transition' as transition-*;
 
 // <=====> IMPORT W .SCSS <=====>
 // w 1 linijce _moj-komponent.scss wpisać:

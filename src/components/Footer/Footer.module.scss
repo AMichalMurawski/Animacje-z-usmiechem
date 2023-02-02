@@ -1,0 +1,34 @@
+@use 'scss/components/components' as *;
+@use 'scss/utils/utils' as *;
+
+.footer {
+  background: var(--bgShadow-secondary);
+
+  &__container {
+    @include flex-display(row, 10px, null, center);
+
+    @include media-mapp(tablet) {
+      @include flex-display(null, 15px);
+    }
+  }
+}
+
+.contact {
+  @include flex-display(column, 8px);
+
+  &__item {
+    @include font-type(700, 12px, 1, 0.03em);
+    font-style: normal;
+
+    @include media-mapp(tablet) {
+      @include font-type(null, 14px);
+    }
+  }
+
+  &__link {
+    &:hover,
+    &:focus {
+      color: var(--link-primary);
+    }
+  }
+}

@@ -1,4 +1,5 @@
-@use '../scss/forward' as *;
+@use '../scss/components/components' as *;
+@use '../scss/utils/utils' as *;
 
 .wrapper {
   @include flex-display(column);
@@ -12,69 +13,4 @@
   position: relative;
   height: 100%;
   flex: 1;
-}
-
-.title {
-  @include font-type(700, 50px, 3, 0.06em);
-  text-align: center;
-}
-
-.nav {
-  @include flex-display(wrap, 50px, center, null);
-  @include font-type(700, 20px, 1, 0.06em);
-
-  &__link {
-    &:hover,
-    &:focus {
-      color: var(--link-secondary);
-    }
-  }
-
-  &__active {
-    color: var(--link-secondary);
-  }
-}
-
-.header {
-  background-image: var(--bgShadow-primary),
-    url('../images/header-background.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: var(--text-alernative);
-  text-shadow: var(--textShadow-primary);
-
-  &__container {
-    position: relative;
-    @include flex-display(column, null, center);
-  }
-  &__logo {
-    position: absolute;
-    top: 15px;
-    left: 15px;
-  }
-}
-
-.footer {
-  background: var(--bgShadow-secondary);
-
-  &__container {
-    @include flex-display(row, 15px, null, center);
-  }
-}
-
-.contact {
-  @include flex-display(column, 8px);
-
-  &__item {
-    @include font-type(700, 16px, 1, 0.03em);
-    font-style: normal;
-  }
-
-  &__link {
-    &:hover,
-    &:focus {
-      color: var(--link-primary);
-    }
-  }
 }

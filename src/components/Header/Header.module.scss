@@ -1,0 +1,98 @@
+@use 'scss/components/components' as *;
+@use 'scss/utils/utils' as *;
+
+.header {
+  background-image: var(--bgShadow-primary),
+    url('../../images/header-background.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--text-alernative);
+  text-shadow: var(--textShadow-primary);
+
+  &__container {
+    position: relative;
+    @include flex-display(column, null, center, center);
+  }
+
+  &__logo {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+  }
+
+  &__menu {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+
+  &__title {
+    @include font-type(700, 30px, 1.5, 0.06em);
+    padding: 30px 0;
+    text-align: center;
+
+    @include media-mapp(null, 500px) {
+      width: 300px;
+    }
+
+    @include media-mapp(tablet) {
+      @include font-type(null, 40px);
+    }
+
+    @include media-mapp(desktop) {
+      @include font-type(null, 50px);
+    }
+
+    @include media-mapp(high) {
+      @include font-type(null, 60px);
+    }
+  }
+}
+
+.nav {
+  display: none;
+
+  @include media-mapp(tablet) {
+    @include flex-display(wrap, null, center, null, 15px, 50px);
+    @include font-type(700, 20px, 1, 0.06em);
+  }
+
+  @include media-mapp(desktop) {
+    @include flex-display(null, null, null, null, 20px, 70px);
+    @include font-type(null, 24px);
+  }
+
+  @include media-mapp(high) {
+    @include flex-display(null, null, null, null, 25px, 90px);
+    @include font-type(null, 28px);
+  }
+
+  &__link {
+    &:hover,
+    &:focus {
+      color: var(--link-secondary);
+    }
+  }
+
+  &__active {
+    color: var(--link-secondary);
+  }
+}
+
+.menu {
+  width: 25px;
+  height: 25px;
+  @include flex-display(column, 5px);
+  cursor: pointer;
+
+  &__line {
+    width: 100%;
+    height: 20%;
+    background-color: white;
+  }
+
+  @include media-mapp(tablet) {
+    display: none;
+  }
+}

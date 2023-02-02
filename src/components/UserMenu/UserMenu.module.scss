@@ -1,0 +1,29 @@
+@use 'scss/components/components' as *;
+@use 'scss/utils/utils' as *;
+
+.menu {
+  position: relative;
+  @include flex-display(column, 15px, center, center);
+
+  &__close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+}
+
+.nav {
+  @include flex-display(column, 15px, center, center);
+  @include font-type(700, 14px, 1, 0.06em);
+
+  &__link {
+    &:hover,
+    &:focus {
+      color: var(--link-secondary);
+    }
+  }
+
+  &__active {
+    color: var(--link-secondary);
+  }
+}
