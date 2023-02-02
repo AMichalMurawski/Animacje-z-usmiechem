@@ -7,7 +7,7 @@ export const Footer = () => {
       <div className={[css.container, css.footer__container].join(' ')}>
         <NavLink
           to="/"
-          className={[css.logo, css['logo--footer']].join(' ')}
+          className={[css.logo, css['logo--high']].join(' ')}
         ></NavLink>
         <address id="contact" className={css.contact}>
           <p className={css.contact__item}>Karolina Murawska</p>

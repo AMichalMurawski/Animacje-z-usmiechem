@@ -4,7 +4,7 @@ import css from './SharedLayout.module.scss';
 import { FidgetSpinner } from 'react-loader-spinner';
 import { Header } from 'components/Header/Header';
 import { Footer } from 'components/Footer/Footer';
-// import { useEffect } from 'react';
+import { UserMenu } from 'components/UserMenu/UserMenu';
 
 export const SharedLayout = () => {
   return (
@@ -26,6 +26,7 @@ export const SharedLayout = () => {
         </div>
       </main>
       <Footer />
+      <UserMenu />
     </div>
   );
 };

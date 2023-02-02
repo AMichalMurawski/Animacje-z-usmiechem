@@ -2,11 +2,13 @@
 @use '../scss/utils/utils' as *;
 
 .wrapper {
+  position: relative;
   @include flex-display(column);
   background-color: var(--bg-primary);
   min-height: 100vh;
   height: 100%;
   width: 100%;
+  overflow: hidden;
 }
 
 .main {

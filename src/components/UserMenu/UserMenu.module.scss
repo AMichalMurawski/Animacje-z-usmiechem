@@ -2,18 +2,33 @@
 @use 'scss/utils/utils' as *;
 
 .menu {
-  position: relative;
-  @include flex-display(column, 15px, center, center);
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 240px;
+  min-height: 100vh;
+  padding: 15px;
+  background-color: var(--bg-primary);
+  @include flex-display(column, 45px, null, center);
+  transform: translateX(105%);
+  @include transition-add('transform');
+  z-index: 900;
 
   &__close {
     position: absolute;
     top: 10px;
     right: 10px;
+    cursor: pointer;
+  }
+
+  &__show {
+    transform: translateX(0%);
   }
 }
 
 .nav {
-  @include flex-display(column, 15px, center, center);
+  width: 100%;
+  @include flex-display(column, 15px);
   @include font-type(700, 14px, 1, 0.06em);
 
   &__link {

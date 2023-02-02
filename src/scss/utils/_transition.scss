@@ -30,6 +30,8 @@ $transition: (
   'visibility': visibility $transitionProperty,
   'flex-basis': visibility $transitionProperty,
   'filter': visibility $transitionProperty,
+  'display': display $transitionProperty,
+  'width': display $transitionProperty,
 );
 
 $transitionCheck: (
@@ -42,7 +44,9 @@ $transitionCheck: (
   'opacity',
   'visibility',
   'flex-basis',
-  'filter'
+  'filter',
+  'display',
+  'width'
 );
 
 @function getOneTransition($var) {

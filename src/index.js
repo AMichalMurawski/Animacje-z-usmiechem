@@ -4,15 +4,19 @@ import { App } from './App';
 import './index.css';
 // import { PersistGate } from 'redux-persist/integration/react';
 import { BrowserRouter } from 'react-router-dom';
+import { Provider } from 'react-redux';
+import { store } from 'redux/store';
 // import { Provider } from 'react-redux';
 // import { store } from 'redux/store';
 // import { persistor } from 'redux/store';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter basename="/animacje-z-usmiechem">
-      <App />
-    </BrowserRouter>
+    <Provider store={store}>
+      <BrowserRouter basename="/animacje-z-usmiechem">
+        <App />
+      </BrowserRouter>
+    </Provider>
   </React.StrictMode>
 );
 
