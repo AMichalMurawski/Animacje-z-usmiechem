@@ -5,6 +5,7 @@ import { FidgetSpinner } from 'react-loader-spinner';
 import { Header } from 'components/Header/Header';
 import { Footer } from 'components/Footer/Footer';
 import { UserMenu } from 'components/UserMenu/UserMenu';
+import { MenuIcon } from 'components/MenuIcon/MenuIcon';
 
 export const SharedLayout = () => {
   return (
@@ -26,6 +27,7 @@ export const SharedLayout = () => {
         </div>
       </main>
       <Footer />
+      <MenuIcon />
       <UserMenu />
     </div>
   );

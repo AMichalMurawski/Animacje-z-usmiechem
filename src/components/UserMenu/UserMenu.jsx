@@ -30,36 +30,49 @@ export const UserMenu = () => {
     dispatch(hideMenu());
   };
 
+  const backdropClick = e => {
+    if (e.currentTarget === e.target) {
+      dispatch(hideMenu());
+      return;
+    }
+  };
+
   return (
     <div
       className={[css.menu, showMenu ? css.menu__show : null].join(' ')}
-      aria-expanded="true"
+      onClick={backdropClick}
     >
-      <div
-        className={[css['btn-close'], css.menu__close].join(' ')}
-        onClick={handleClick}
-      >
-        X
+      <div className={css.modal}>
+        <div
+          className={[css['btn-close'], css.modal__close].join(' ')}
+          onClick={handleClick}
+        >
+          X
+        </div>
+        <NavLink
+          className={[css.logo, css['logo--high']].join(' ')}
+          to="/"
+          onClick={handleClick}
+        ></NavLink>
+        <nav className={[css.nav].join(' ')}>
+          <NavLink className={css.nav__link} to="/" onClick={handleClick}>
+            O nas
+          </NavLink>
+          <NavLink className={css.nav__link} to="/oferta" onClick={handleClick}>
+            Oferta
+          </NavLink>
+          <NavLink
+            className={css.nav__link}
+            to="/galeria"
+            onClick={handleClick}
+          >
+            Galeria
+          </NavLink>
+          <a className={css.nav__link} href="#contact" onClick={handleClick}>
+            Kontakt
+          </a>
+        </nav>
       </div>
-      <NavLink
-        className={[css.logo, css['logo--high']].join(' ')}
-        to="/"
-        onClick={handleClick}
-      ></NavLink>
-      <nav className={[css.nav].join(' ')}>
-        <NavLink className={css.nav__link} to="/" onClick={handleClick}>
-          O nas
-        </NavLink>
-        <NavLink className={css.nav__link} to="/oferta" onClick={handleClick}>
-          Oferta
-        </NavLink>
-        <NavLink className={css.nav__link} to="/galeria" onClick={handleClick}>
-          Galeria
-        </NavLink>
-        <a className={css.nav__link} href="#contact" onClick={handleClick}>
-          Kontakt
-        </a>
-      </nav>
     </div>
   );
 };

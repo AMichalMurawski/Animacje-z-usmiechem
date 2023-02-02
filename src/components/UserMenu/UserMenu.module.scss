@@ -2,27 +2,35 @@
 @use 'scss/utils/utils' as *;
 
 .menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  min-height: 100vh;
+  transform: translateX(105%);
+  @include transition-add('transform');
+  z-index: 900;
+
+  &__show {
+    transform: translateX(0%);
+  }
+}
+
+.modal {
   position: absolute;
   top: 0;
   right: 0;
   width: 240px;
-  min-height: 100vh;
+  height: 100%;
   padding: 15px;
   background-color: var(--bg-primary);
   @include flex-display(column, 45px, null, center);
-  transform: translateX(105%);
-  @include transition-add('transform');
-  z-index: 900;
 
   &__close {
     position: absolute;
     top: 10px;
     right: 10px;
     cursor: pointer;
-  }
-
-  &__show {
-    transform: translateX(0%);
   }
 }
 
