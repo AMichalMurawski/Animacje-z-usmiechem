@@ -23,7 +23,8 @@
   width: 240px;
   height: 100%;
   padding: 15px;
-  background-color: var(--bg-primary);
+  background-color: var(--bg-secondary);
+  box-shadow: -8px 0 16px var(--border-primary);
   @include flex-display(column, 45px, null, center);
 
   &__close {
@@ -36,10 +37,22 @@
 
 .nav {
   width: 100%;
-  @include flex-display(column, 15px);
-  @include font-type(700, 14px, 1, 0.06em);
+  @include flex-display(column, 20px);
+  @include font-type(700, 18px, 1, 0.06em);
+  color: white;
+  text-shadow: var(--textShadow-primary);
 
   &__link {
+    position: relative;
+
+    &:not(:first-of-type)::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      top: -10px;
+      border: 1px solid var(--bg-primary);
+    }
+
     &:hover,
     &:focus {
       color: var(--link-secondary);

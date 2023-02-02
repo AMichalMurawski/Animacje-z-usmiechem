@@ -5,6 +5,7 @@ import { NavLink } from 'react-router-dom';
 import { selectShowMenu } from 'redux/user/userSelectors';
 import { hideMenu } from 'redux/user/userSlice';
 import css from './UserMenu.module.scss';
+import logo from '../../images/logo-animacje-z-usmiechem-color-removebg-squoosh.png';
 
 export const UserMenu = () => {
   const dispatch = useDispatch();
@@ -50,10 +51,16 @@ export const UserMenu = () => {
           X
         </div>
         <NavLink
-          className={[css.logo, css['logo--high']].join(' ')}
+          className={[css.logo, css.logo__modal].join(' ')}
           to="/"
           onClick={handleClick}
-        ></NavLink>
+        >
+          <img
+            className={css['logo__image']}
+            src={logo}
+            alt="logo firmy animacje z uśmiechem"
+          />
+        </NavLink>
         <nav className={[css.nav].join(' ')}>
           <NavLink className={css.nav__link} to="/" onClick={handleClick}>
             O nas

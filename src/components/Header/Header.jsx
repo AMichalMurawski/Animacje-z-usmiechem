@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import css from './Header.module.scss';
+import logo from '../../images/logo-animacje-z-usmiechem-color-removebg-squoosh.png';
 
 export const Header = () => {
   return (
@@ -7,8 +8,14 @@ export const Header = () => {
       <div className={[css.header__container, css.container].join(' ')}>
         <NavLink
           to="/"
-          className={[css.logo, css.header__logo].join(' ')}
-        ></NavLink>
+          className={[css.logo, css.logo__header, css.header__logo].join(' ')}
+        >
+          <img
+            className={css['logo__image']}
+            src={logo}
+            alt="logo firmy animacje z uśmiechem"
+          />
+        </NavLink>
         <h1 className={css.header__title}>Animacje z uśmiechem</h1>
         <nav className={[css.nav, css.header__nav].join(' ')}>
           <NavLink className={css.nav__link} to="/">

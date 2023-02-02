@@ -1,14 +1,18 @@
 import { NavLink } from 'react-router-dom';
 import css from './Footer.module.scss';
+import logo from '../../images/logo-animacje-z-usmiechem-color-removebg-squoosh.png';
 
 export const Footer = () => {
   return (
     <footer className={css.footer}>
       <div className={[css.container, css.footer__container].join(' ')}>
-        <NavLink
-          to="/"
-          className={[css.logo, css['logo--high']].join(' ')}
-        ></NavLink>
+        <NavLink to="/" className={[css.logo, css.logo__footer].join(' ')}>
+          <img
+            className={css['logo__image']}
+            src={logo}
+            alt="logo firmy animacje z uśmiechem"
+          />
+        </NavLink>
         <address id="contact" className={css.contact}>
           <p className={css.contact__item}>Karolina Murawska</p>
           <a
