@@ -12,19 +12,17 @@ export const SharedLayout = () => {
     <div className={css.wrapper}>
       <Header />
       <main className={css.main}>
-        <div className={css.container}>
-          <Suspense
-            fallback={
-              <FidgetSpinner
-                backgroundColor="mediumaquamarine"
-                ballColors={['plum', 'plum', 'plum']}
-                wrapperClass={css.spinner}
-              />
-            }
-          >
-            <Outlet />
-          </Suspense>
-        </div>
+        <Suspense
+          fallback={
+            <FidgetSpinner
+              backgroundColor="mediumaquamarine"
+              ballColors={['plum', 'plum', 'plum']}
+              wrapperClass={css.spinner}
+            />
+          }
+        >
+          <Outlet />
+        </Suspense>
       </main>
       <Footer />
       <MenuIcon />

@@ -1,0 +1,56 @@
+@use 'scss/components/components' as *;
+@use 'scss/utils/utils' as *;
+
+.offer {
+  @include flex-display(wrap, 30px, flex-start);
+
+  @include media-mapp(tablet) {
+    @include flex-display(row, 60px, center);
+  }
+
+  &__item {
+    @include flex-display(row, 15px, center, center);
+    @include flex-basis(2, 30px);
+
+    @include media-mapp(360px) {
+      @include flex-display(null, null, flex-start);
+    }
+
+    @include media-mapp(550px, tablet) {
+      @include flex-basis(3, 30px);
+    }
+    @include media-mapp(tablet) {
+      @include flex-display(column, 15px, null, center);
+      @include flex-basis(10, 1px);
+    }
+  }
+
+  &__icon {
+    display: none;
+    @include media-mapp(360px) {
+      display: block;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: white;
+    }
+
+    @include media-mapp(550px) {
+      width: 65px;
+      height: 65px;
+    }
+
+    @include media-mapp(tablet) {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  &__name {
+    text-align: center;
+
+    @include media-mapp(360px) {
+      text-align: start;
+    }
+  }
+}

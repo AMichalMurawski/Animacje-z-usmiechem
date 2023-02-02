@@ -4,7 +4,7 @@
 .menu {
   position: fixed;
   top: 0;
-  right: 0;
+  left: 100%;
   width: 100vw;
   min-height: 100vh;
   transform: translateX(105%);
@@ -12,7 +12,7 @@
   z-index: 900;
 
   &__show {
-    transform: translateX(0%);
+    transform: translateX(-100%);
   }
 }
 

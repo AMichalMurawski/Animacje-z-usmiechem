@@ -1,0 +1,20 @@
+@use '../utils/utils' as *;
+
+.heading-third {
+  @include font-type(700, 24px, 1.2, 0.04em);
+  text-align: center;
+  padding: 15px 0;
+  margin-bottom: 15px;
+}
+
+.paragraph-first {
+  @include font-type(400, 14px, 1.2, 0.03em);
+
+  @include media-mapp(tablet) {
+    @include font-type(null, 16px);
+  }
+
+  &:not(:first-of-type) {
+    margin-top: 20px;
+  }
+}
