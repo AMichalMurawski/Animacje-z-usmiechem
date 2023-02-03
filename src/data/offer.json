@@ -1,6 +1,7 @@
 [
   {
     "id": "wedding",
+    "title": "Wesela",
     "description": [
       "Corrupti soluta eos sunt assumenda fugiat eaque tempora omnis, voluptatum autem consequatur tempore at cumque, mollitia pariatur corporis eum nostrum aspernatur cum.",
       "Unde itaque vel libero modi non voluptatibus nemo aliquid deleniti placeat provident.",
@@ -21,6 +22,7 @@
   },
   {
     "id": "communion",
+    "title": "Komunie",
     "description": [
       "Inventore libero incidunt, animi similique numquam qui repudiandae cum vitae dolorum. Non illo laudantium quas inventore totam exercitationem ratione ab debitis molestiae! Consequuntur, voluptatibus. Error facere, culpa sapiente dolorem est labore! Doloremque!",
       "Harum eum atque fugit ipsa fugiat assumenda, beatae dolor illo at voluptatem nihil et esse! Officia soluta eius eum dolores consectetur voluptas tempora voluptate inventore eligendi id doloremque laboriosam, voluptatibus, ipsam maiores praesentium aliquam.",
@@ -41,6 +43,7 @@
   },
   {
     "id": "christening",
+    "title": "Chrzciny",
     "description": [
       "Unde itaque vel libero modi non voluptatibus nemo aliquid deleniti placeat provident.",
       "Inventore libero incidunt, animi similique numquam qui repudiandae cum vitae dolorum. Non illo laudantium quas inventore totam exercitationem ratione ab debitis molestiae! Consequuntur, voluptatibus. Error facere, culpa sapiente dolorem est labore! Doloremque!",
@@ -61,6 +64,7 @@
   },
   {
     "id": "birthday",
+    "title": "Urodziny",
     "description": [
       "Inventore libero incidunt, animi similique numquam qui repudiandae cum vitae dolorum. Non illo laudantium quas inventore totam exercitationem ratione ab debitis molestiae! Consequuntur, voluptatibus. Error facere, culpa sapiente dolorem est labore! Doloremque!",
       "A suscipit perspiciatis nesciunt ipsum at magnam dolore minima laborum quam. Quasi!",
@@ -81,6 +85,7 @@
   },
   {
     "id": "others",
+    "title": "Inne",
     "description": [
       "Harum eum atque fugit ipsa fugiat assumenda, beatae dolor illo at voluptatem nihil et esse! Officia soluta eius eum dolores consectetur voluptas tempora voluptate inventore eligendi id doloremque laboriosam, voluptatibus, ipsam maiores praesentium aliquam.",
       "Corrupti soluta eos sunt assumenda fugiat eaque tempora omnis, voluptatum autem consequatur tempore at cumque, mollitia pariatur corporis eum nostrum aspernatur cum.",

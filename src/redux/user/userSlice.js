@@ -21,7 +21,7 @@ const userSlice = createSlice({
     },
     changeOffer: {
       reducer(state, action) {
-        state.offerType = action.payload;
+        state.offerType = action.payload.offerType;
       },
     },
     offerDescription: {

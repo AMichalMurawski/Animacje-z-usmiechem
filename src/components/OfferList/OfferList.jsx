@@ -1,7 +1,12 @@
+import { useEffect } from 'react';
+import { useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
+import { selectOfferType } from 'redux/user/userSelectors';
 import css from './OfferList.module.scss';
 
 export const OfferList = () => {
+  const offerType = useSelector(selectOfferType);
+
   return (
     <section className={css.container}>
       <h3 className={css['heading-third']}>Oferujemy</h3>
@@ -12,7 +17,11 @@ export const OfferList = () => {
           </NavLink>
           <NavLink to="/oferta/wesela">
             <p
-              className={[css['paragraph-first'], css['offer__name']].join(' ')}
+              className={[
+                css['paragraph-first'],
+                css.offer__name,
+                offerType === 'wedding' ? css.offer__active : null,
+              ].join(' ')}
             >
               Wesela
             </p>
@@ -24,7 +33,11 @@ export const OfferList = () => {
           </NavLink>
           <NavLink to="/oferta/komunie">
             <p
-              className={[css['paragraph-first'], css['offer__name']].join(' ')}
+              className={[
+                css['paragraph-first'],
+                css.offer__name,
+                offerType === 'communion' ? css.offer__active : null,
+              ].join(' ')}
             >
               Komunie
             </p>
@@ -36,7 +49,11 @@ export const OfferList = () => {
           </NavLink>
           <NavLink to="/oferta/chrzciny">
             <p
-              className={[css['paragraph-first'], css['offer__name']].join(' ')}
+              className={[
+                css['paragraph-first'],
+                css.offer__name,
+                offerType === 'christening' ? css.offer__active : null,
+              ].join(' ')}
             >
               Chrzciny
             </p>
@@ -48,7 +65,11 @@ export const OfferList = () => {
           </NavLink>
           <NavLink to="/oferta/urodziny">
             <p
-              className={[css['paragraph-first'], css['offer__name']].join(' ')}
+              className={[
+                css['paragraph-first'],
+                css.offer__name,
+                offerType === 'birthday' ? css.offer__active : null,
+              ].join(' ')}
             >
               Urodziny
             </p>
@@ -60,7 +81,11 @@ export const OfferList = () => {
           </NavLink>
           <NavLink to="/oferta/inne">
             <p
-              className={[css['paragraph-first'], css['offer__name']].join(' ')}
+              className={[
+                css['paragraph-first'],
+                css.offer__name,
+                offerType === 'others' ? css.offer__active : null,
+              ].join(' ')}
             >
               Inne
             </p>

@@ -53,4 +53,9 @@
       text-align: start;
     }
   }
+
+  &__active {
+    font-weight: 700;
+    color: var(--link-primary);
+  }
 }

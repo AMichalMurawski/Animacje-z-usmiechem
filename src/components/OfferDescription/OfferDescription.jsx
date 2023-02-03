@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useLocation } from 'react-router-dom';
 import { selectOfferContent } from 'redux/user/userSelectors';
-import { offerDescription } from 'redux/user/userSlice';
+import { changeOffer, offerDescription } from 'redux/user/userSlice';
 import css from './OfferDescription.module.scss';
 
 export const OfferDescription = offerType => {
@@ -11,13 +11,24 @@ export const OfferDescription = offerType => {
   const offerContent = useSelector(selectOfferContent);
 
   useEffect(() => {
+    dispatch(changeOffer(offerType));
     dispatch(offerDescription(offerType));
+    return () => {
+      dispatch(changeOffer({ offerType: null }));
+    };
   }, [location, offerType, dispatch]);
 
   return (
     <section className={css.container}>
       {!!offerContent && (
         <div className={css.description}>
+          <h3
+            className={[css['heading-third'], css.description__heading].join(
+              ' '
+            )}
+          >
+            {offerContent[0].title}
+          </h3>
           {offerContent[0].description.map((descr, i) => (
             <p key={i} className={css['paragraph-first']}>
               {descr}
