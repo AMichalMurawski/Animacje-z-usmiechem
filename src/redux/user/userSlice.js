@@ -5,7 +5,7 @@ const userSlice = createSlice({
   name: 'user',
   initialState: {
     showMenu: false,
-    offerType: null,
+    offerType: '',
     offerContent: '',
   },
   reducers: {
