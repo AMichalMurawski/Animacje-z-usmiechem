@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/animacje-z-usmiechem/static/css/main.0f67dcaf.css",
-    "main.js": "/animacje-z-usmiechem/static/js/main.35b1d90d.js",
-    "static/css/129.3a3d2c27.chunk.css": "/animacje-z-usmiechem/static/css/129.3a3d2c27.chunk.css",
-    "static/js/129.a33b44be.chunk.js": "/animacje-z-usmiechem/static/js/129.a33b44be.chunk.js",
-    "static/css/208.97396448.chunk.css": "/animacje-z-usmiechem/static/css/208.97396448.chunk.css",
-    "static/js/208.b216ba5c.chunk.js": "/animacje-z-usmiechem/static/js/208.b216ba5c.chunk.js",
+    "main.js": "/animacje-z-usmiechem/static/js/main.394d5cbd.js",
+    "static/css/129.def35865.chunk.css": "/animacje-z-usmiechem/static/css/129.def35865.chunk.css",
+    "static/js/129.8bf784a9.chunk.js": "/animacje-z-usmiechem/static/js/129.8bf784a9.chunk.js",
+    "static/css/208.10f354ae.chunk.css": "/animacje-z-usmiechem/static/css/208.10f354ae.chunk.css",
+    "static/js/208.582b6b6b.chunk.js": "/animacje-z-usmiechem/static/js/208.582b6b6b.chunk.js",
     "static/js/960.b487292a.chunk.js": "/animacje-z-usmiechem/static/js/960.b487292a.chunk.js",
     "static/media/logo-animacje-z-usmiechem-color-removebg-squoosh.png": "/animacje-z-usmiechem/static/media/logo-animacje-z-usmiechem-color-removebg-squoosh.f9ebed86885f5592849a.png",
     "static/media/header-background.jpg": "/animacje-z-usmiechem/static/media/header-background.76a446220cc18d541690.jpg",
     "index.html": "/animacje-z-usmiechem/index.html",
     "main.0f67dcaf.css.map": "/animacje-z-usmiechem/static/css/main.0f67dcaf.css.map",
-    "main.35b1d90d.js.map": "/animacje-z-usmiechem/static/js/main.35b1d90d.js.map",
-    "129.3a3d2c27.chunk.css.map": "/animacje-z-usmiechem/static/css/129.3a3d2c27.chunk.css.map",
-    "129.a33b44be.chunk.js.map": "/animacje-z-usmiechem/static/js/129.a33b44be.chunk.js.map",
-    "208.97396448.chunk.css.map": "/animacje-z-usmiechem/static/css/208.97396448.chunk.css.map",
-    "208.b216ba5c.chunk.js.map": "/animacje-z-usmiechem/static/js/208.b216ba5c.chunk.js.map",
+    "main.394d5cbd.js.map": "/animacje-z-usmiechem/static/js/main.394d5cbd.js.map",
+    "129.def35865.chunk.css.map": "/animacje-z-usmiechem/static/css/129.def35865.chunk.css.map",
+    "129.8bf784a9.chunk.js.map": "/animacje-z-usmiechem/static/js/129.8bf784a9.chunk.js.map",
+    "208.10f354ae.chunk.css.map": "/animacje-z-usmiechem/static/css/208.10f354ae.chunk.css.map",
+    "208.582b6b6b.chunk.js.map": "/animacje-z-usmiechem/static/js/208.582b6b6b.chunk.js.map",
     "960.b487292a.chunk.js.map": "/animacje-z-usmiechem/static/js/960.b487292a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0f67dcaf.css",
-    "static/js/main.35b1d90d.js"
+    "static/js/main.394d5cbd.js"
   ]
 }
