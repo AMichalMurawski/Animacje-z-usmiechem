@@ -1,6 +1,6 @@
 import { OfferDescription } from 'components/OfferDescription/OfferDescription';
 import { OfferList } from 'components/OfferList/OfferList';
-import { Route, Routes } from 'react-router-dom';
+import { Navigate, Route, Routes } from 'react-router-dom';
 
 const Offer = () => {
   return (
@@ -27,6 +27,7 @@ const Offer = () => {
           path="inne"
           element={<OfferDescription offerType={'others'} />}
         />
+        <Route path="*" element={<Navigate to="wesela" />} />
       </Routes>
     </>
   );

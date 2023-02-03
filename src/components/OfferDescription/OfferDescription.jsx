@@ -16,21 +16,33 @@ export const OfferDescription = offerType => {
 
   return (
     <section className={css.container}>
-      <div className={css.description}>
-        {offerContent[0].description.map(descr => (
-          <p className={css['paragraph-first']}>{descr}</p>
-        ))}
-      </div>
-      <h3
-        className={[css['heading-third'], css.description__heading].join(' ')}
-      >
-        Atrakcje
-      </h3>
-      <ul className={css.option}>
-        {offerContent[0].options.map(opt => (
-          <li className={css.option__item}>{opt}</li>
-        ))}
-      </ul>
+      {!!offerContent && (
+        <div className={css.description}>
+          {offerContent[0].description.map((descr, i) => (
+            <p key={i} className={css['paragraph-first']}>
+              {descr}
+            </p>
+          ))}
+        </div>
+      )}
+      {!!offerContent && (
+        <>
+          <h3
+            className={[css['heading-third'], css.description__heading].join(
+              ' '
+            )}
+          >
+            Atrakcje
+          </h3>
+          <ul className={css.option}>
+            {offerContent[0].options.map((opt, i) => (
+              <li key={i} className={css.option__item}>
+                {opt}
+              </li>
+            ))}
+          </ul>
+        </>
+      )}
     </section>
   );
 };
