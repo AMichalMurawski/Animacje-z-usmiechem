@@ -1,4 +1,4 @@
-import { useMediaQuery } from 'hooks/useMedia';
+import { useMediaQuery, usePage } from 'hooks';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
@@ -11,6 +11,7 @@ export const UserMenu = () => {
   const dispatch = useDispatch();
   const showMenu = useSelector(selectShowMenu);
   const mediaQuery = useMediaQuery();
+  const { home, offer, gallery, contact } = usePage();
 
   const mediaEvent = () => {
     dispatch(hideMenu());
@@ -52,7 +53,7 @@ export const UserMenu = () => {
         </div>
         <NavLink
           className={[css.logo, css.logo__modal].join(' ')}
-          to="/"
+          to={home.fullLocation}
           onClick={handleClick}
         >
           <img
@@ -62,21 +63,29 @@ export const UserMenu = () => {
           />
         </NavLink>
         <nav className={[css.nav].join(' ')}>
-          <NavLink className={css.nav__link} to="/" onClick={handleClick}>
-            O nas
-          </NavLink>
-          <NavLink className={css.nav__link} to="/oferta" onClick={handleClick}>
-            Oferta
+          <NavLink
+            className={css.nav__link}
+            to={home.fullLocation}
+            onClick={handleClick}
+          >
+            {home.title}
           </NavLink>
           <NavLink
             className={css.nav__link}
-            to="/galeria"
+            to={offer.fullLocation}
             onClick={handleClick}
           >
-            Galeria
+            {offer.title}
+          </NavLink>
+          <NavLink
+            className={css.nav__link}
+            to={gallery.fullLocation}
+            onClick={handleClick}
+          >
+            {gallery.title}
           </NavLink>
           <a className={css.nav__link} href="#contact" onClick={handleClick}>
-            Kontakt
+            {contact.title}
           </a>
         </nav>
       </div>

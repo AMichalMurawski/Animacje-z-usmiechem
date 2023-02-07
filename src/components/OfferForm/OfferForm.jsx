@@ -1,9 +1,11 @@
+import { usePage } from 'hooks';
 import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { selectOfferType } from 'redux/user/userSelectors';
 import css from './OfferForm.module.scss';
 
 export const OfferForm = () => {
+  const { offer } = usePage();
   const offerType = useSelector(selectOfferType);
   const navigate = useNavigate();
 
@@ -20,27 +22,12 @@ export const OfferForm = () => {
   };
 
   const handleChangeOfferType = e => {
-    let toLocation = '';
-    switch (e.currentTarget.value) {
-      case 'wedding':
-        toLocation = 'wesela';
-        break;
-      case 'communion':
-        toLocation = 'komunie';
-        break;
-      case 'christening':
-        toLocation = 'chrzciny';
-        break;
-      case 'birthday':
-        toLocation = 'urodziny';
-        break;
-      case 'others':
-        toLocation = 'inne';
-        break;
-      default:
-        toLocation = 'wesela';
+    const query = e.currentTarget.value;
+    for (let route of Object.keys(offer.routes)) {
+      if (offer.routes[route].name === query) {
+        navigate(offer.routes[route].location);
+      }
     }
-    navigate(toLocation);
   };
 
   const handleSubmit = e => {

@@ -1,12 +1,18 @@
 import { NavLink } from 'react-router-dom';
 import css from './Footer.module.scss';
 import logo from '../../images/logo-animacje-z-usmiechem-color-removebg-squoosh.png';
+import { usePage } from 'hooks';
 
 export const Footer = () => {
+  const { home } = usePage();
+
   return (
     <footer className={css.footer}>
       <div className={[css.container, css.footer__container].join(' ')}>
-        <NavLink to="/" className={[css.logo, css.logo__footer].join(' ')}>
+        <NavLink
+          to={home.fullLocation}
+          className={[css.logo, css.logo__footer].join(' ')}
+        >
           <img
             className={css['logo__image']}
             src={logo}
