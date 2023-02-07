@@ -5,7 +5,7 @@
    - walidacja poprzez funkcję (wyświetlenie komunikatu i podświetlenie pól do
      uzupełnienia)
    - stylizacja css
-   - ustawienie komponentu dla strony '/' oraz dla strony '/oferta'
+   - layout komponentu dla strony '/' oraz dla strony '/oferta'
 
 2. Hooks:
 

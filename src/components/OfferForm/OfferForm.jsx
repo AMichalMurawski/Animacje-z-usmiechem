@@ -9,17 +9,13 @@ export const OfferForm = () => {
 
   const today = () => {
     const newDay = new Date(Date.now());
-    console.log(newDay);
-    console.log(newDay.getFullYear());
-    console.log(newDay.getMonth().toString().padStart(2, '0'));
-    console.log(newDay.getDay().toString().padStart(2, '0'));
+    newDay.setDate(newDay.getDate() + 1);
     const stringDate =
       newDay.getFullYear() +
       '-' +
-      newDay.getMonth().toString().padStart(2, '0') +
+      (newDay.getMonth() + 1).toString().padStart(2, '0') +
       '-' +
-      newDay.getDay().toString().padStart(2, '0');
-    console.log(stringDate);
+      newDay.getDate().toString().padStart(2, '0');
     return stringDate;
   };
 
@@ -89,7 +85,12 @@ export const OfferForm = () => {
           <label htmlFor="date" required>
             Termin
           </label>
-          <input type="date" id="date" name="date" value={today()}></input>
+          <input
+            type="date"
+            id="date"
+            name="date"
+            defaultValue={today()}
+          ></input>
           <label htmlFor="place" required>
             Miejscowość
           </label>
