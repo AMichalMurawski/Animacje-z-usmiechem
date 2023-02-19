@@ -1,23 +1,59 @@
 [
   {
     "id": "wedding",
-    "title": "Wesela",
+    "title": "Animacje weselne",
     "description": [
-      "Corrupti soluta eos sunt assumenda fugiat eaque tempora omnis, voluptatum autem consequatur tempore at cumque, mollitia pariatur corporis eum nostrum aspernatur cum.",
-      "Unde itaque vel libero modi non voluptatibus nemo aliquid deleniti placeat provident.",
-      "Ex facilis dignissimos, nesciunt, magnam dicta necessitatibus aspernatur nam officia et voluptate totam ullam eveniet nemo dolore, ipsam neque suscipit. Autem architecto fuga quaerat esse omnis dignissimos blanditiis voluptatem ullam officia sit."
+      "Dzieci na weselu potrafią wprowadzić ogromną dawkę pozytywnej energii, pełną uśmiechów i zabawnych sytuacji.",
+      "Nasze animatorki zorganizują dzieciom niezapomniany, pełen zabawy i atrakcji czas, pozwalając dorosłym swobodnie bawić się na weselu."
     ],
-    "options": [
-      "Praesentium eos necessitatibus.",
-      "Laudantium a cupiditate laborum.",
-      "Nesciunt temporibus velit accusantium perspiciatis.",
-      "Quas ab consequuntur magnam.",
-      "Ipsum inventore vel eaque tempora.",
-      "Praesentium eos necessitatibus.",
-      "Laudantium a cupiditate laborum.",
-      "Nesciunt temporibus velit accusantium perspiciatis.",
-      "Quas ab consequuntur magnam.",
-      "Ipsum inventore vel eaque tempora."
+    "packages": {
+      "name": "Pakiety weselne",
+      "types": [
+        {
+          "name": "STANDARD",
+          "prize": {
+            "timeValue": "2",
+            "timeType": "h",
+            "costValue": "750",
+            "costCurrency": "zł"
+          },
+          "options": [
+            "Zabawy z chustą animacyjną",
+            "Konkurencje sportowe",
+            "Gry i zabawy integracyjne",
+            "Warsztat skręcania balonów",
+            "Konkursy, zgadywanki z nagrodami",
+            "Stanowisko małego konstruktora",
+            "Przygotowanie prezentu dla Pary Młodej"
+          ]
+        },
+        {
+          "name": "PREMIUM",
+          "prize": {
+            "timeValue": "3",
+            "timeType": "h",
+            "costValue": "950",
+            "costCurrency": "zł"
+          },
+          "options": [
+            "Zabawy z chustą animacyjną",
+            "Konkurencje sportowe",
+            "Gry i zabawy integracyjne",
+            "Warsztat skręcania balonów",
+            "Konkursy, zgadywanki z nagrodami",
+            "Stanowisko małego konstruktora",
+            "Przygotowanie prezentu dla Pary Młodej",
+            "Bańki mydlane XXL",
+            "Brokatowe/wodne tatuaże",
+            "Warsztat kreatywny (łapacz snów, bransoletki)"
+          ]
+        }
+      ]
+    },
+    "others": [
+      "KĄCIK MALUCHA przygotowany z myślą o najmłodszych dzieciach 1-3 lata, z którego mogą korzystać w obecności opiekuna - w cenie obu pakietów.",
+      "Każda następna godzina poza pakietem 150 zł/1h.",
+      "Jeśli zabawa trwa dłużej, oferujemy możliwość nocnego czuwania, podczas, którego organizujemy seans filmowy, albo czytamy dzieciom bajki, a każde dziecko, które ma ochotę może pójść spać pod czujnym okiem animatora."
     ]
   },
   {
@@ -28,17 +64,54 @@
       "Harum eum atque fugit ipsa fugiat assumenda, beatae dolor illo at voluptatem nihil et esse! Officia soluta eius eum dolores consectetur voluptas tempora voluptate inventore eligendi id doloremque laboriosam, voluptatibus, ipsam maiores praesentium aliquam.",
       "A suscipit perspiciatis nesciunt ipsum at magnam dolore minima laborum quam. Quasi!"
     ],
-    "options": [
-      "Quidem recusandae nulla doloremque.",
-      "Quaerat praesentium obcaecati molestias.",
-      "Repellendus neque distinctio eum dolorem.",
-      "Laudantium a cupiditate laborum.",
-      "Quas ab consequuntur magnam.",
-      "Quidem recusandae nulla doloremque.",
-      "Quaerat praesentium obcaecati molestias.",
-      "Repellendus neque distinctio eum dolorem.",
-      "Laudantium a cupiditate laborum.",
-      "Quas ab consequuntur magnam."
+    "packages": {
+      "name": "Pakiety weselne",
+      "types": [
+        {
+          "name": "STANDARD",
+          "prize": {
+            "timeValue": "2",
+            "timeType": "h",
+            "costValue": "750",
+            "costCurrency": "zł"
+          },
+          "options": [
+            "Zabawy z chustą animacyjną",
+            "Konkurencje sportowe",
+            "Gry i zabawy integracyjne",
+            "Warsztat skręcania balonów",
+            "Konkursy, zgadywanki z nagrodami",
+            "Stanowisko małego konstruktora",
+            "Przygotowanie prezentu dla Pary Młodej"
+          ]
+        },
+        {
+          "name": "PREMIUM",
+          "prize": {
+            "timeValue": "3",
+            "timeType": "h",
+            "costValue": "950",
+            "costCurrency": "zł"
+          },
+          "options": [
+            "Zabawy z chustą animacyjną",
+            "Konkurencje sportowe",
+            "Gry i zabawy integracyjne",
+            "Warsztat skręcania balonów",
+            "Konkursy, zgadywanki z nagrodami",
+            "Stanowisko małego konstruktora",
+            "Przygotowanie prezentu dla Pary Młodej",
+            "Bańki mydlane XXL",
+            "Brokatowe/wodne tatuaże",
+            "Warsztat kreatywny (łapacz snów, bransoletki)"
+          ]
+        }
+      ]
+    },
+    "others": [
+      "KĄCIK MALUCHA przygotowany z myślą o najmłodszych dzieciach 1-3 lata, z którego mogą korzystać w obecności opiekuna - w cenie obu pakietów.",
+      "Każda następna godzina poza pakietem 150 zł/1h.",
+      "Jeśli zabawa trwa dłużej, oferujemy możliwość nocnego czuwania, podczas, którego organizujemy seans filmowy, albo czytamy dzieciom bajki, a każde dziecko, które ma ochotę może pójść spać pod czujnym okiem animatora."
     ]
   },
   {
@@ -49,17 +122,54 @@
       "Inventore libero incidunt, animi similique numquam qui repudiandae cum vitae dolorum. Non illo laudantium quas inventore totam exercitationem ratione ab debitis molestiae! Consequuntur, voluptatibus. Error facere, culpa sapiente dolorem est labore! Doloremque!",
       "Ex facilis dignissimos, nesciunt, magnam dicta necessitatibus aspernatur nam officia et voluptate totam ullam eveniet nemo dolore, ipsam neque suscipit. Autem architecto fuga quaerat esse omnis dignissimos blanditiis voluptatem ullam officia sit."
     ],
-    "options": [
-      "Repellendus neque distinctio eum dolorem.",
-      "Ipsum inventore vel eaque tempora.",
-      "Praesentium eos necessitatibus.",
-      "Nesciunt temporibus velit accusantium perspiciatis.",
-      "Quidem recusandae nulla doloremque.",
-      "Repellendus neque distinctio eum dolorem.",
-      "Ipsum inventore vel eaque tempora.",
-      "Praesentium eos necessitatibus.",
-      "Nesciunt temporibus velit accusantium perspiciatis.",
-      "Quidem recusandae nulla doloremque."
+    "packages": {
+      "name": "Pakiety weselne",
+      "types": [
+        {
+          "name": "STANDARD",
+          "prize": {
+            "timeValue": "2",
+            "timeType": "h",
+            "costValue": "750",
+            "costCurrency": "zł"
+          },
+          "options": [
+            "Zabawy z chustą animacyjną",
+            "Konkurencje sportowe",
+            "Gry i zabawy integracyjne",
+            "Warsztat skręcania balonów",
+            "Konkursy, zgadywanki z nagrodami",
+            "Stanowisko małego konstruktora",
+            "Przygotowanie prezentu dla Pary Młodej"
+          ]
+        },
+        {
+          "name": "PREMIUM",
+          "prize": {
+            "timeValue": "3",
+            "timeType": "h",
+            "costValue": "950",
+            "costCurrency": "zł"
+          },
+          "options": [
+            "Zabawy z chustą animacyjną",
+            "Konkurencje sportowe",
+            "Gry i zabawy integracyjne",
+            "Warsztat skręcania balonów",
+            "Konkursy, zgadywanki z nagrodami",
+            "Stanowisko małego konstruktora",
+            "Przygotowanie prezentu dla Pary Młodej",
+            "Bańki mydlane XXL",
+            "Brokatowe/wodne tatuaże",
+            "Warsztat kreatywny (łapacz snów, bransoletki)"
+          ]
+        }
+      ]
+    },
+    "others": [
+      "KĄCIK MALUCHA przygotowany z myślą o najmłodszych dzieciach 1-3 lata, z którego mogą korzystać w obecności opiekuna - w cenie obu pakietów.",
+      "Każda następna godzina poza pakietem 150 zł/1h.",
+      "Jeśli zabawa trwa dłużej, oferujemy możliwość nocnego czuwania, podczas, którego organizujemy seans filmowy, albo czytamy dzieciom bajki, a każde dziecko, które ma ochotę może pójść spać pod czujnym okiem animatora."
     ]
   },
   {
@@ -70,17 +180,54 @@
       "A suscipit perspiciatis nesciunt ipsum at magnam dolore minima laborum quam. Quasi!",
       "Ex facilis dignissimos, nesciunt, magnam dicta necessitatibus aspernatur nam officia et voluptate totam ullam eveniet nemo dolore, ipsam neque suscipit. Autem architecto fuga quaerat esse omnis dignissimos blanditiis voluptatem ullam officia sit."
     ],
-    "options": [
-      "Praesentium eos necessitatibus.",
-      "Nesciunt temporibus velit accusantium perspiciatis.",
-      "Quidem recusandae nulla doloremque.",
-      "Laudantium a cupiditate laborum.",
-      "Quas ab consequuntur magnam.",
-      "Praesentium eos necessitatibus.",
-      "Nesciunt temporibus velit accusantium perspiciatis.",
-      "Quidem recusandae nulla doloremque.",
-      "Laudantium a cupiditate laborum.",
-      "Quas ab consequuntur magnam."
+    "packages": {
+      "name": "Pakiety weselne",
+      "types": [
+        {
+          "name": "STANDARD",
+          "prize": {
+            "timeValue": "2",
+            "timeType": "h",
+            "costValue": "750",
+            "costCurrency": "zł"
+          },
+          "options": [
+            "Zabawy z chustą animacyjną",
+            "Konkurencje sportowe",
+            "Gry i zabawy integracyjne",
+            "Warsztat skręcania balonów",
+            "Konkursy, zgadywanki z nagrodami",
+            "Stanowisko małego konstruktora",
+            "Przygotowanie prezentu dla Pary Młodej"
+          ]
+        },
+        {
+          "name": "PREMIUM",
+          "prize": {
+            "timeValue": "3",
+            "timeType": "h",
+            "costValue": "950",
+            "costCurrency": "zł"
+          },
+          "options": [
+            "Zabawy z chustą animacyjną",
+            "Konkurencje sportowe",
+            "Gry i zabawy integracyjne",
+            "Warsztat skręcania balonów",
+            "Konkursy, zgadywanki z nagrodami",
+            "Stanowisko małego konstruktora",
+            "Przygotowanie prezentu dla Pary Młodej",
+            "Bańki mydlane XXL",
+            "Brokatowe/wodne tatuaże",
+            "Warsztat kreatywny (łapacz snów, bransoletki)"
+          ]
+        }
+      ]
+    },
+    "others": [
+      "KĄCIK MALUCHA przygotowany z myślą o najmłodszych dzieciach 1-3 lata, z którego mogą korzystać w obecności opiekuna - w cenie obu pakietów.",
+      "Każda następna godzina poza pakietem 150 zł/1h.",
+      "Jeśli zabawa trwa dłużej, oferujemy możliwość nocnego czuwania, podczas, którego organizujemy seans filmowy, albo czytamy dzieciom bajki, a każde dziecko, które ma ochotę może pójść spać pod czujnym okiem animatora."
     ]
   },
   {
@@ -91,17 +238,54 @@
       "Corrupti soluta eos sunt assumenda fugiat eaque tempora omnis, voluptatum autem consequatur tempore at cumque, mollitia pariatur corporis eum nostrum aspernatur cum.",
       "Unde itaque vel libero modi non voluptatibus nemo aliquid deleniti placeat provident."
     ],
-    "options": [
-      "Nesciunt temporibus velit accusantium perspiciatis.",
-      "Quidem recusandae nulla doloremque.",
-      "Repellendus neque distinctio eum dolorem.",
-      "Laudantium a cupiditate laborum.",
-      "Praesentium eos necessitatibus.",
-      "Nesciunt temporibus velit accusantium perspiciatis.",
-      "Quidem recusandae nulla doloremque.",
-      "Repellendus neque distinctio eum dolorem.",
-      "Laudantium a cupiditate laborum.",
-      "Praesentium eos necessitatibus."
+    "packages": {
+      "name": "Pakiety weselne",
+      "types": [
+        {
+          "name": "STANDARD",
+          "prize": {
+            "timeValue": "2",
+            "timeType": "h",
+            "costValue": "750",
+            "costCurrency": "zł"
+          },
+          "options": [
+            "Zabawy z chustą animacyjną",
+            "Konkurencje sportowe",
+            "Gry i zabawy integracyjne",
+            "Warsztat skręcania balonów",
+            "Konkursy, zgadywanki z nagrodami",
+            "Stanowisko małego konstruktora",
+            "Przygotowanie prezentu dla Pary Młodej"
+          ]
+        },
+        {
+          "name": "PREMIUM",
+          "prize": {
+            "timeValue": "3",
+            "timeType": "h",
+            "costValue": "950",
+            "costCurrency": "zł"
+          },
+          "options": [
+            "Zabawy z chustą animacyjną",
+            "Konkurencje sportowe",
+            "Gry i zabawy integracyjne",
+            "Warsztat skręcania balonów",
+            "Konkursy, zgadywanki z nagrodami",
+            "Stanowisko małego konstruktora",
+            "Przygotowanie prezentu dla Pary Młodej",
+            "Bańki mydlane XXL",
+            "Brokatowe/wodne tatuaże",
+            "Warsztat kreatywny (łapacz snów, bransoletki)"
+          ]
+        }
+      ]
+    },
+    "others": [
+      "KĄCIK MALUCHA przygotowany z myślą o najmłodszych dzieciach 1-3 lata, z którego mogą korzystać w obecności opiekuna - w cenie obu pakietów.",
+      "Każda następna godzina poza pakietem 150 zł/1h.",
+      "Jeśli zabawa trwa dłużej, oferujemy możliwość nocnego czuwania, podczas, którego organizujemy seans filmowy, albo czytamy dzieciom bajki, a każde dziecko, które ma ochotę może pójść spać pod czujnym okiem animatora."
     ]
   }
 ]
